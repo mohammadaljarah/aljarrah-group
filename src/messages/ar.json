@@ -6,5 +6,16 @@
     "language": "اللغة",
     "english": "English",
     "arabic": "العربية"
+  },
+  "footer": {
+    "companies": "الشركات",
+    "links": "الروابط",
+    "contact": "تواصل",
+    "companyOne": "الشركة الأولى",
+    "companyTwo": "الشركة الثانية",
+    "companyThree": "الشركة الثالثة",
+    "email": "info@aljarrahgroup.com",
+    "phone": "+964 000 000 0000",
+    "address": "بغداد، العراق"
   }
 }
