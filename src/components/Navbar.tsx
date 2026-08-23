@@ -43,7 +43,7 @@ export function Navbar() {
               </NavLink>
             ))}
             <details ref={languageMenuRef} className="group relative z-30">
-              <summary className="flex list-none cursor-pointer items-center justify-center p-2 text-[#124d86] transition hover:text-[#0d3e70] focus-visible:outline-none">
+              <summary className="flex list-none cursor-pointer items-center justify-center p-2 text-[#124d86] transition hover:opacity-80 active:opacity-60 focus-visible:outline-none">
                 <span className="sr-only">{content.language}</span>
                 <svg
                   aria-hidden="true"
@@ -67,7 +67,7 @@ export function Navbar() {
                   onClick={() => {
                     handleLanguageChange("en");
                   }}
-                  className={`block w-full px-4 py-2 text-left text-sm transition hover:bg-primary/6 ${
+                  className={`block w-full px-4 py-2 text-left text-sm transition hover:opacity-80 active:opacity-60 ${
                     i18n.language === "en"
                       ? "font-semibold text-primary"
                       : "font-medium text-[#124d86]"
@@ -80,7 +80,7 @@ export function Navbar() {
                   onClick={() => {
                     handleLanguageChange("ar");
                   }}
-                  className={`block w-full px-4 py-2 text-left text-sm transition hover:bg-primary/6 ${
+                  className={`block w-full px-4 py-2 text-left text-sm transition hover:opacity-80 active:opacity-60 ${
                     i18n.language === "ar"
                       ? "font-semibold text-primary"
                       : "font-medium text-[#124d86]"
