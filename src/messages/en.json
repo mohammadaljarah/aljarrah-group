@@ -7,6 +7,25 @@
     "english": "English",
     "arabic": "العربية"
   },
+  "hero": {
+    "eyebrow": "Al-Jarrah Group",
+    "title": "Building Iraq’s Future Through Excellence",
+    "description": "We connect strategic leadership, operational depth, and long-term partnerships across our companies to create resilient growth from Iraq outward.",
+    "primaryCta": "Explore Companies",
+    "secondaryCta": "About Us",
+    "statOneLabel": "Years of Experience",
+    "statOneValue": "50+",
+    "statTwoLabel": "Companies",
+    "statTwoValue": "8",
+    "statThreeLabel": "SQM Facilities",
+    "statThreeValue": "50,000",
+    "cardTitle": "Group Vision",
+    "cardHeadline": "Structured for growth, guided by trust, and built for lasting impact.",
+    "cardPointOneLabel": "Partnerships",
+    "cardPointOneText": "We cultivate strong relationships with clients, operators, and communities across every company in the group.",
+    "cardPointTwoLabel": "Execution",
+    "cardPointTwoText": "Our teams combine local understanding with disciplined delivery to move projects from opportunity to outcome."
+  },
   "footer": {
     "companies": "Companies",
     "links": "Links",
