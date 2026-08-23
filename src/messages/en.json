@@ -1,3 +1,10 @@
 {
-  "Home": {}
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "companies": "Companies",
+    "language": "Language",
+    "english": "English",
+    "arabic": "العربية"
+  }
 }

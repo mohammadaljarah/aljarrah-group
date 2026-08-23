@@ -7,8 +7,12 @@ i18n
   .use(initReactI18next) // Passes i18n instance to react-i18next
   .init({
     resources: {
-      en,
-      ar,
+      en: {
+        translation: en,
+      },
+      ar: {
+        translation: ar,
+      },
     },
     fallbackLng: "en", // Fallback language if current language is unavailable
     interpolation: {
