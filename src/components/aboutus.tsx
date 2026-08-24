@@ -37,109 +37,174 @@ export function AboutUs() {
     },
   ];
 
-  const engagementStages = [
-    t("about.stageOne"),
-    t("about.stageTwo"),
-    t("about.stageThree"),
-  ];
-
-  const integrationBenefits = [
-    t("about.integrationBenefitOne"),
-    t("about.integrationBenefitTwo"),
-    t("about.integrationBenefitThree"),
-  ];
-
   return (
-    <section className="relative overflow-hidden px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,#dbe9f8_0%,transparent_42%),radial-gradient(circle_at_90%_80%,#d7e7fa_0%,transparent_40%)]" />
-
-      <div className="mx-auto max-w-6xl">
-        <div className="border border-primary/15 bg-white/90 p-7 shadow-[0_30px_90px_-50px_rgba(0,71,136,0.45)] sm:p-9 lg:p-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#587b9d]">
+    <section className="relative overflow-hidden">
+      {/* Hero Section */}
+      <div className="relative bg-primary px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "url('/hero_background.png')" }} />
+        <div className="relative mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
             {t("about.eyebrow")}
           </p>
-          <h1 className="mt-3 max-w-4xl text-4xl font-bold leading-tight text-primary sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 max-w-4xl text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
             {t("about.title")}
           </h1>
-
-          <div className="mt-8 grid gap-6 text-base leading-8 text-[#2a4967] sm:text-lg">
-            <p>{t("about.paragraphOne")}</p>
-            <p>{t("about.paragraphTwo")}</p>
-            <p>{t("about.paragraphThree")}</p>
-            <p>{t("about.paragraphFour")}</p>
-            <p>{t("about.paragraphFive")}</p>
-          </div>
+          <p className="mt-6 max-w-2xl text-lg font-medium text-white/90">
+            {t("about.paragraphOne")}
+          </p>
         </div>
+      </div>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {profile.map((item) => (
-            <article
-              key={item.label}
-              className="border border-primary/12 bg-white p-5 shadow-[0_20px_50px_-38px_rgba(0,71,136,0.35)]"
-            >
-              <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#6a89a6]">
-                {item.label}
+      {/* Main Content */}
+      <div className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-6xl">
+          {/* Company Profile Grid */}
+          <div className="mb-16">
+            <h2 className="mb-8 text-2xl font-bold text-primary sm:text-3xl">
+              {t("about.companyProfileTitle")}
+            </h2>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {profile.map((item) => (
+                <div
+                  key={item.label}
+                  className="relative overflow-hidden bg-white p-6 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)]"
+                >
+                  <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-primary to-primary/50" />
+                  <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6b8aa4]">
+                    {item.label}
+                  </h3>
+                  <p className="mt-4 text-2xl font-bold text-primary">{item.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Story Section */}
+          <div className="mb-16 grid items-center gap-8 lg:grid-cols-2">
+            <div>
+              <h2 className="text-2xl font-bold text-primary sm:text-3xl">
+                {t("about.ourStoryTitle")}
               </h2>
-              <p className="mt-3 text-base font-semibold leading-7 text-primary">
-                {item.value}
-              </p>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-10 border border-primary/15 bg-white/95 p-7 shadow-[0_30px_90px_-55px_rgba(0,71,136,0.45)] sm:p-9">
-          <h2 className="text-2xl font-bold text-primary sm:text-3xl">
-            {t("about.approachTitle")}
-          </h2>
-          <p className="mt-4 text-base leading-8 text-[#2a4967] sm:text-lg">
-            {t("about.approachParagraphOne")}
-          </p>
-          <p className="mt-4 text-base leading-8 text-[#2a4967] sm:text-lg">
-            {t("about.approachParagraphTwo")}
-          </p>
-
-          <div className="mt-6 grid gap-3 sm:grid-cols-3">
-            {engagementStages.map((stage) => (
-              <div
-                key={stage}
-                className="border border-primary/10 bg-[#f7fbff] px-4 py-3 text-sm font-semibold text-[#28517a]"
-              >
-                {stage}
+              <div className="mt-6 space-y-4 text-base leading-8 text-[#33506d] sm:text-lg">
+                <p>{t("about.paragraphTwo")}</p>
+                <p>{t("about.paragraphThree")}</p>
+                <p>{t("about.paragraphFour")}</p>
               </div>
-            ))}
+            </div>
+            <div className="bg-gradient-to-br from-primary/5 to-primary/15 p-8 sm:p-10">
+              <div className="space-y-4">
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#587b9d]">
+                    {t("about.founded")}
+                  </p>
+                  <p className="mt-1 text-2xl font-bold text-primary">1976</p>
+                </div>
+                <div className="border-l-4 border-primary/60 pl-4 py-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#587b9d]">
+                    {t("about.founder")}
+                  </p>
+                  <p className="mt-1 text-lg font-semibold text-[#28517a]">
+                    {t("about.profileFounderValue")}
+                  </p>
+                </div>
+                <div className="border-l-4 border-primary/40 pl-4 py-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#587b9d]">
+                    {t("about.focus")}
+                  </p>
+                  <p className="mt-1 text-lg font-semibold text-[#28517a]">
+                    {t("about.profileSectorsValue")}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <h3 className="mt-8 text-xl font-bold text-primary">
-            {t("about.integrationTitle")}
-          </h3>
-          <p className="mt-3 text-base leading-8 text-[#2a4967] sm:text-lg">
-            {t("about.integrationParagraph")}
-          </p>
-
-          <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            {integrationBenefits.map((benefit) => (
-              <div
-                key={benefit}
-                className="border border-primary/10 bg-[#f3f8fd] px-4 py-3 text-sm font-medium text-[#2f577d]"
-              >
-                {benefit}
-              </div>
-            ))}
+          {/* Core Values / Pillars */}
+          <div className="mb-16">
+            <h2 className="mb-8 text-2xl font-bold text-primary sm:text-3xl">
+              {t("about.valuesTitle")}
+            </h2>
+            <div className="grid gap-6 sm:grid-cols-3">
+              {pillars.map((pillar, idx) => (
+                <div
+                  key={pillar.title}
+                  className="group relative bg-white p-7 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)] transition hover:shadow-[0_20px_50px_-25px_rgba(0,71,136,0.35)]"
+                >
+                  <div
+                    className="absolute top-0 left-0 h-1 bg-primary transition"
+                    style={{ width: `${(idx + 1) * 25}%` }}
+                  />
+                  <div className="mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-xl font-bold text-primary">
+                    {idx + 1}
+                  </div>
+                  <h3 className="mt-4 text-lg font-bold text-primary">{pillar.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-[#355779]">{pillar.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {pillars.map((pillar) => (
-            <article
-              key={pillar.title}
-              className="border border-primary/12 bg-white p-6 shadow-[0_20px_50px_-38px_rgba(0,71,136,0.42)]"
-            >
-              <h2 className="text-xl font-bold text-primary">{pillar.title}</h2>
-              <p className="mt-3 text-sm leading-7 text-[#355779] sm:text-base">
-                {pillar.description}
+          {/* Partnership Approach */}
+          <div className="grid gap-10 lg:grid-cols-2">
+            {/* Left: Approach */}
+            <div className="rounded-lg bg-white p-8 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)]">
+              <h2 className="text-2xl font-bold text-primary">{t("about.approachTitle")}</h2>
+              <p className="mt-4 text-base leading-8 text-[#33506d]">
+                {t("about.approachParagraphOne")}
               </p>
-            </article>
-          ))}
+              <p className="mt-4 text-base leading-8 text-[#33506d]">
+                {t("about.approachParagraphTwo")}
+              </p>
+              <div className="mt-6 flex flex-col gap-3">
+                <div className="flex items-start gap-3">
+                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <span className="text-xs font-bold text-primary">✓</span>
+                  </div>
+                  <span className="text-sm font-medium text-[#28517a]">{t("about.stageOne")}</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <span className="text-xs font-bold text-primary">✓</span>
+                  </div>
+                  <span className="text-sm font-medium text-[#28517a]">{t("about.stageTwo")}</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <span className="text-xs font-bold text-primary">✓</span>
+                  </div>
+                  <span className="text-sm font-medium text-[#28517a]">{t("about.stageThree")}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Integration Benefits */}
+            <div className="rounded-lg bg-gradient-to-br from-primary/5 via-white to-primary/10 p-8 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)]">
+              <h2 className="text-2xl font-bold text-primary">{t("about.integrationTitle")}</h2>
+              <p className="mt-4 text-base leading-8 text-[#33506d]">
+                {t("about.integrationParagraph")}
+              </p>
+              <div className="mt-6 space-y-3">
+                {[1, 2, 3].map((i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 rounded bg-white/60 px-4 py-3 backdrop-blur-sm"
+                  >
+                    <div className="h-2 w-2 rounded-full bg-primary" />
+                    <span className="text-sm font-medium text-[#28517a]">
+                      {t(`about.integrationBenefit${i === 1 ? "One" : i === 2 ? "Two" : "Three"}`)}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Closing Statement */}
+          <div className="mt-16 border-l-4 border-primary bg-white/80 p-8 sm:p-10">
+            <p className="text-lg font-medium leading-8 text-[#33506d] sm:text-xl">
+              {t("about.paragraphFive")}
+            </p>
+          </div>
         </div>
       </div>
     </section>
