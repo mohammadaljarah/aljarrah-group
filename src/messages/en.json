@@ -26,6 +26,17 @@
     "cardPointTwoLabel": "Execution",
     "cardPointTwoText": "Our teams combine local understanding with disciplined delivery to move projects from opportunity to outcome."
   },
+  "values": {
+    "eyebrow": "What Drives Us",
+    "title": "Our Core Values & Differentiators",
+    "subtitle": "We stand apart through our commitment to building lasting relationships, delivering integrated expertise, and creating meaningful impact across every sector we serve.",
+    "oneTitle": "Relationships",
+    "oneDescription": "We build long-term trust with clients and partners through transparency, consistency, and shared success. Your success is our success.",
+    "twoTitle": "Integrated Expertise",
+    "twoDescription": "Our multidisciplinary team connects experience across agriculture, construction, logistics, and beyond to deliver complete, coordinated solutions.",
+    "threeTitle": "Meaningful Impact",
+    "threeDescription": "We pursue growth that strengthens industries, supports communities, and creates lasting value that endures beyond transactions."
+  },
   "about": {
     "eyebrow": "About Al-Jarrah Group",
     "title": "A Forward-Thinking Collective Built on Excellence, Innovation, and Trust",

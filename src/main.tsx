@@ -2,10 +2,10 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "@/index.css";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { Hero } from "@/components/hero";
 import "@/i18n.ts";
-import { Layout } from "@/components/layout";
-import { AboutUs } from "@/components/aboutus";
+import { Layout } from "@/components/layout/layout";
+import { HomePage } from "@/pages/home";
+import { AboutUsPage } from "@/pages/aboutus";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function EmptyPage() {
@@ -17,8 +17,8 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Hero />} />
-          <Route path="aboutus" element={<AboutUs />} />
+          <Route index element={<HomePage />} />
+          <Route path="aboutus" element={<AboutUsPage />} />
           <Route path="companies" element={<EmptyPage />} />
         </Route>
       </Routes>
