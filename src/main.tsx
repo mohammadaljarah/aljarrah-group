@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import { Hero } from "@/components/hero";
 import "@/i18n.ts";
 import { Layout } from "@/components/layout";
+import { AboutUs } from "@/components/aboutus";
 
 // eslint-disable-next-line react-refresh/only-export-components
 function EmptyPage() {
@@ -17,7 +18,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Hero />} />
-          <Route path="aboutus" element={<EmptyPage />} />
+          <Route path="aboutus" element={<AboutUs />} />
           <Route path="companies" element={<EmptyPage />} />
         </Route>
       </Routes>

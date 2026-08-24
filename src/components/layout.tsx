@@ -1,5 +1,5 @@
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
 import { Outlet } from "react-router";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
