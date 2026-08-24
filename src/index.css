@@ -4,6 +4,7 @@
 @theme {
 	--color-primary: #004788;
 	--color-primary-dark: #003b70;
+	--color-secondary: #8396C1;
 }
 
 @layer base {

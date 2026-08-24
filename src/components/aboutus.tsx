@@ -69,7 +69,7 @@ export function AboutUs() {
                   key={item.label}
                   className="relative overflow-hidden bg-white p-6 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)]"
                 >
-                  <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-primary to-primary/50" />
+                  <div className="absolute top-0 start-0 h-1 w-full bg-gradient-to-r from-primary to-secondary" />
                   <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6b8aa4]">
                     {item.label}
                   </h3>
@@ -80,41 +80,25 @@ export function AboutUs() {
           </div>
 
           {/* Story Section */}
-          <div className="mb-16 grid items-center gap-8 lg:grid-cols-2">
-            <div>
-              <h2 className="text-2xl font-bold text-primary sm:text-3xl">
-                {t("about.ourStoryTitle")}
-              </h2>
-              <div className="mt-6 space-y-4 text-base leading-8 text-[#33506d] sm:text-lg">
-                <p>{t("about.paragraphTwo")}</p>
-                <p>{t("about.paragraphThree")}</p>
-                <p>{t("about.paragraphFour")}</p>
+          <div className="mb-16">
+            <h2 className="text-2xl font-bold text-primary sm:text-3xl">
+              {t("about.ourStoryTitle")}
+            </h2>
+            <div className="mt-8 grid gap-6 lg:grid-cols-3">
+              <div className="lg:col-span-2">
+                <div className="space-y-4 text-base leading-8 text-[#33506d] sm:text-lg">
+                  <p>{t("about.paragraphTwo")}</p>
+                  <p>{t("about.paragraphThree")}</p>
+                  <p>{t("about.paragraphFour")}</p>
+                </div>
               </div>
-            </div>
-            <div className="bg-gradient-to-br from-primary/5 to-primary/15 p-8 sm:p-10">
-              <div className="space-y-4">
-                <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#587b9d]">
-                    {t("about.founded")}
-                  </p>
-                  <p className="mt-1 text-2xl font-bold text-primary">1976</p>
-                </div>
-                <div className="border-l-4 border-primary/60 pl-4 py-2">
-                  <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#587b9d]">
-                    {t("about.founder")}
-                  </p>
-                  <p className="mt-1 text-lg font-semibold text-[#28517a]">
-                    {t("about.profileFounderValue")}
-                  </p>
-                </div>
-                <div className="border-l-4 border-primary/40 pl-4 py-2">
-                  <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#587b9d]">
-                    {t("about.focus")}
-                  </p>
-                  <p className="mt-1 text-lg font-semibold text-[#28517a]">
-                    {t("about.profileSectorsValue")}
-                  </p>
-                </div>
+              <div className="rounded-lg bg-gradient-to-br from-primary/8 to-primary/12 p-6 shadow-[0_8px_20px_-15px_rgba(0,71,136,0.2)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#587b9d]">
+                  {t("about.legacy")}
+                </p>
+                <p className="mt-4 text-base font-medium leading-7 text-[#28517a]">
+                  {t("about.legacyText")}
+                </p>
               </div>
             </div>
           </div>
@@ -131,8 +115,7 @@ export function AboutUs() {
                   className="group relative bg-white p-7 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)] transition hover:shadow-[0_20px_50px_-25px_rgba(0,71,136,0.35)]"
                 >
                   <div
-                    className="absolute top-0 left-0 h-1 bg-primary transition"
-                    style={{ width: `${(idx + 1) * 25}%` }}
+                    className="absolute top-0 start-0 w-1 h-full bg-primary transition"
                   />
                   <div className="mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-xl font-bold text-primary">
                     {idx + 1}
@@ -156,20 +139,20 @@ export function AboutUs() {
                 {t("about.approachParagraphTwo")}
               </p>
               <div className="mt-6 flex flex-col gap-3">
-                <div className="flex items-start gap-3">
-                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
                     <span className="text-xs font-bold text-primary">✓</span>
                   </div>
                   <span className="text-sm font-medium text-[#28517a]">{t("about.stageOne")}</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
                     <span className="text-xs font-bold text-primary">✓</span>
                   </div>
                   <span className="text-sm font-medium text-[#28517a]">{t("about.stageTwo")}</span>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10">
                     <span className="text-xs font-bold text-primary">✓</span>
                   </div>
                   <span className="text-sm font-medium text-[#28517a]">{t("about.stageThree")}</span>
@@ -200,7 +183,7 @@ export function AboutUs() {
           </div>
 
           {/* Closing Statement */}
-          <div className="mt-16 border-l-4 border-primary bg-white/80 p-8 sm:p-10">
+          <div className="mt-16 border-s-4 border-primary bg-white/80 p-8 sm:p-10">
             <p className="text-lg font-medium leading-8 text-[#33506d] sm:text-xl">
               {t("about.paragraphFive")}
             </p>
