@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Card } from "@/components/common/card";
 
 export function ValuesSection() {
   const { t } = useTranslation();
@@ -35,26 +36,19 @@ export function ValuesSection() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((value, idx) => (
-            <div
-              key={value.title}
-              className="group relative overflow-hidden bg-white p-8 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)] transition hover:shadow-[0_20px_50px_-25px_rgba(0,71,136,0.35)]"
-            >
-              <div className="absolute top-0 start-0 h-full w-1 bg-primary transition" />
-              
-              <div className="relative">
-                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-secondary/15 text-2xl font-bold text-secondary">
-                  {idx + 1}
-                </div>
-                
-                <h3 className="mt-4 text-xl font-bold text-primary">
-                  {value.title}
-                </h3>
-                
-                <p className="mt-3 text-base leading-7 text-[#355779]">
-                  {value.description}
-                </p>
+            <Card key={value.title} withHover borderPosition="left">
+              <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-full bg-secondary/15 text-2xl font-bold text-secondary">
+                {idx + 1}
               </div>
-            </div>
+
+              <h3 className="mt-4 text-xl font-bold text-primary">
+                {value.title}
+              </h3>
+
+              <p className="mt-3 text-base leading-7 text-[#355779]">
+                {value.description}
+              </p>
+            </Card>
           ))}
         </div>
       </div>

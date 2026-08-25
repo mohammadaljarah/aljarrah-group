@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Card } from "@/components/common/card";
 
 export function ValuesPillars() {
   const { t } = useTranslation();
@@ -25,17 +26,13 @@ export function ValuesPillars() {
       </h2>
       <div className="grid gap-6 sm:grid-cols-3">
         {pillars.map((pillar, idx) => (
-          <div
-            key={pillar.title}
-            className="group relative bg-white p-7 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)] transition hover:shadow-[0_20px_50px_-25px_rgba(0,71,136,0.35)]"
-          >
-            <div className="absolute top-0 start-0 w-1 h-full bg-primary transition" />
+          <Card key={pillar.title} withHover borderPosition="left">
             <div className="mt-2 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-xl font-bold text-primary">
               {idx + 1}
             </div>
             <h3 className="mt-4 text-lg font-bold text-primary">{pillar.title}</h3>
             <p className="mt-3 text-sm leading-7 text-[#355779]">{pillar.description}</p>
-          </div>
+          </Card>
         ))}
       </div>
     </div>
