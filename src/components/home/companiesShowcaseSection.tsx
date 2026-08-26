@@ -70,12 +70,12 @@ export function CompaniesShowcaseSection() {
                 className="group relative overflow-hidden border border-[#d7e5f4] bg-white p-6 shadow-[0_22px_54px_-34px_rgba(0,71,136,0.5)] transition duration-300 hover:shadow-[0_30px_60px_-30px_rgba(0,71,136,0.45)] sm:p-7"
               >
                 <div className="absolute top-0 left-0 h-full w-1.5 bg-gradient-to-b from-primary via-[#2f6ba3] to-secondary" />
-                <span className="pointer-events-none absolute top-2 right-4 text-7xl font-bold  text-[#e8f0fa] transition duration-300 group-hover:text-[#d8e7f7] sm:right-7 sm:top-3 sm:text-8xl">
+                <span className="pointer-events-none absolute top-3 right-3 z-20 text-6xl leading-none font-bold text-[#dfeaf8] transition duration-300 group-hover:text-[#d3e3f6] sm:right-7 sm:top-3 sm:z-0 sm:text-8xl">
                   0{idx + 1}
                 </span>
 
-                <div className="relative grid gap-5 sm:grid-cols-[190px_1fr] sm:items-start">
-                  <div className="h-28 border border-[#dde9f7] bg-[linear-gradient(150deg,#f9fbff_0%,#edf3fb_100%)] px-5 py-4 sm:h-32">
+                <div className="relative z-10 grid gap-5 sm:grid-cols-[190px_1fr] sm:items-start">
+                  <div className="h-24 px-2 py-1 sm:h-28 sm:px-3">
                     <img
                       src={company.logo}
                       alt={`${company.name} logo`}
@@ -92,7 +92,7 @@ export function CompaniesShowcaseSection() {
                   </div>
                 </div>
 
-                <ul className="relative mt-6 grid gap-3 sm:grid-cols-2 sm:gap-4">
+                <ul className="relative z-10 mt-6 grid gap-3 sm:grid-cols-2 sm:gap-4">
                   {company.points.map((point) => (
                     <li
                       key={point}
