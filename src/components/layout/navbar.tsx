@@ -29,19 +29,19 @@ export function Navbar() {
     }`;
 
   return (
-    <header className="relative z-20 w-full border-y border-white/75 bg-white/88 shadow-[0_24px_80px_-48px_rgba(3,57,116,0.55)] backdrop-blur">
-      <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6 sm:py-5 lg:px-8">
+    <header className="sticky top-0 z-50 w-full border-y border-[#e0e9f5] bg-white shadow-[0_24px_80px_-48px_rgba(3,57,116,0.55)]">
+      <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 sm:py-3 lg:px-8">
         <nav className="flex items-center gap-2 md:gap-4">
           <NavLink to="/" className="order-1 shrink-0 md:mr-6">
             <img
               src="/logo_emblem.png"
               alt="Al Jarrah Group"
-              className="h-10 w-10 sm:hidden"
+              className="h-9 w-9 sm:hidden"
             />
             <img
               src="/logo_wide.png"
               alt="Al Jarrah Group"
-              className="hidden h-14 w-auto sm:block sm:h-16"
+              className="hidden h-12 w-auto sm:block sm:h-14"
             />
           </NavLink>
 

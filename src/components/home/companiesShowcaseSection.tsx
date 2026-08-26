@@ -27,7 +27,7 @@ export function CompaniesShowcaseSection() {
           {companyData.map((company, idx) => (
             <article
               key={company.id}
-              className="group relative overflow-hidden border border-[#d4e2f2] bg-white shadow-[0_22px_54px_-34px_rgba(0,71,136,0.45)] transition duration-300 hover:shadow-[0_30px_60px_-30px_rgba(0,71,136,0.4)]"
+              className="group relative overflow-hidden border border-[#d4e2f2] bg-white transition duration-300 hover:shadow-[0_30px_60px_-30px_rgba(0,71,136,0.4)]"
             >
               <div className="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-primary via-[#2f6ba3] to-secondary" />
               <span className="pointer-events-none absolute top-4 right-4 z-10 text-5xl leading-none font-bold text-[#e4eef9] transition duration-300 group-hover:text-[#d8e7f7] sm:right-6 sm:text-6xl">
