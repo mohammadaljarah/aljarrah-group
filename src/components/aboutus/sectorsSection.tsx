@@ -39,7 +39,7 @@ export function SectorsSection() {
   ];
 
   return (
-    <div className="mb-16 px-4 py-16">
+    <div className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold text-primary sm:text-4xl">

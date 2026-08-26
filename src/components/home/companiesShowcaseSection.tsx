@@ -7,8 +7,7 @@ export function CompaniesShowcaseSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative overflow-hidden bg-[#eef4fb] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,rgba(131,150,193,0.24),transparent_42%),radial-gradient(circle_at_88%_78%,rgba(0,71,136,0.17),transparent_45%)]" />
+    <section className="relative overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
 
       <div className="relative mx-auto max-w-7xl">
         <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">

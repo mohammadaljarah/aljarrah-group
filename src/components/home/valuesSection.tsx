@@ -20,7 +20,7 @@ export function ValuesSection() {
   ];
 
   return (
-    <section className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
