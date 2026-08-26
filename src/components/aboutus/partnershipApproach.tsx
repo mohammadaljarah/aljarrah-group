@@ -37,7 +37,7 @@ export function PartnershipApproach() {
       </div>
 
       {/* Right: Integration Benefits */}
-      <div className="rounded-lg bg-gradient-to-br from-primary/5 via-white to-primary/10 p-8 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)]">
+      <div className="rounded-lg bg-white from-primary/5 via-white to-primary/10 p-8 shadow-[0_10px_30px_-20px_rgba(0,71,136,0.2)]">
         <h2 className="text-2xl font-bold text-primary">{t("about.integrationTitle")}</h2>
         <p className="mt-4 text-base leading-8 text-[#33506d]">
           {t("about.integrationParagraph")}
@@ -46,7 +46,7 @@ export function PartnershipApproach() {
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className="flex items-center gap-3 rounded bg-white/60 px-4 py-3 backdrop-blur-sm"
+              className="flex items-center gap-3 rounded bg-black/10 px-4 py-3 backdrop-blur-sm"
             >
               <div className="h-2 w-2 rounded-full bg-primary" />
               <span className="text-sm font-medium text-[#28517a]">

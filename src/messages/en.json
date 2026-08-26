@@ -37,6 +37,46 @@
     "threeTitle": "Meaningful Impact",
     "threeDescription": "We pursue growth that strengthens industries, supports communities, and creates lasting value that endures beyond transactions."
   },
+  "whyChoose": {
+    "eyebrow": "Why Al-Jarrah Group",
+    "title": "Why Choose Al-Jarrah Group",
+    "subtitle": "We combine experience, integrated operations, and long-term commitment to help partners achieve dependable results in complex markets.",
+    "reasonOneTitle": "Proven Legacy Since 1976",
+    "reasonOneDescription": "With decades of performance across key sectors, we bring the stability, discipline, and institutional knowledge needed for sustained growth.",
+    "reasonTwoTitle": "Integrated Multi-Sector Capability",
+    "reasonTwoDescription": "Our companies work together across agriculture, food, industrial, health, and real estate domains to provide coordinated end-to-end solutions.",
+    "reasonThreeTitle": "Trusted, Relationship-First Partnership",
+    "reasonThreeDescription": "We prioritize transparency, accountability, and long-term collaboration so every engagement is built on trust and shared outcomes."
+  },
+  "companiesShowcase": {
+    "eyebrow": "Featured Companies",
+    "title": "Showcase Of Our Companies",
+    "subtitle": "Three of our flagship companies demonstrate how Al-Jarrah Group delivers value across agriculture, logistics, and healthcare support.",
+    "rdc": {
+      "name": "Rural Development Company (RDC)",
+      "summary": "RDC has supported Iraq's agricultural modernization for decades through high-value equipment, long-term partnerships, and technical support.",
+      "pointOne": "Exclusive John Deere dealer for agricultural equipment since 1998, with expansion into Turf and Gator lines in 2016.",
+      "pointTwo": "Provides supply, installation, and maintenance for tractors, cultivators, combines, balers, and turf mowers.",
+      "pointThree": "Works with key Iraqi institutions including the Ministry of Agriculture, SCAS, CBI, and Ministry of Finance.",
+      "pointFour": "Maintains long-term industrial partnerships with international engineering and heavy-industry suppliers."
+    },
+    "alghadak": {
+      "name": "Alghadak Warehouses",
+      "summary": "Alghadak operates one of the largest private cold-storage and warehousing compounds in Baghdad, serving food and beverage distribution.",
+      "pointOne": "Cold storage capacity reaches approximately 1,000 tons cooling, with reliable temperature-controlled operations.",
+      "pointTwo": "Flexible unit sizes include dry stores (500, 1000, 2000 m2) and temperature-controlled stores (250, 500, 750 m2).",
+      "pointThree": "Located in Awareej, Baghdad, on a 50,000 square meter compound strategically connected to southern access routes.",
+      "pointFour": "Supports both short-term and long-term warehousing with secure and adaptable storage solutions."
+    },
+    "alkafaat": {
+      "name": "Al-Kafaat Hospital",
+      "summary": "Al-Kafaat Hospital represents the group's healthcare commitment through patient-focused medical services and operational care quality.",
+      "pointOne": "Supports the health sector with professional clinical services and modern care standards.",
+      "pointTwo": "Built around dependable operations, safety, and quality-of-care practices for patients and families.",
+      "pointThree": "Detailed facility and service information can be expanded directly from the official hospital website content.",
+      "pointFour": "Reflects the group's broader mission to deliver trusted essential services that improve community wellbeing."
+    }
+  },
   "about": {
     "eyebrow": "About Al-Jarrah Group",
     "title": "A Forward-Thinking Collective Built on Excellence, Innovation, and Trust",
