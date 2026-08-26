@@ -6,11 +6,8 @@ import "@/i18n.ts";
 import { Layout } from "@/components/layout/layout";
 import { HomePage } from "@/pages/home";
 import { AboutUsPage } from "@/pages/aboutus";
-
-// eslint-disable-next-line react-refresh/only-export-components
-function EmptyPage() {
-  return null;
-}
+import { CompaniesPage } from "@/pages/companies";
+import { CompanyDetailPage } from "@/pages/companyDetail";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,7 +16,8 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="aboutus" element={<AboutUsPage />} />
-          <Route path="companies" element={<EmptyPage />} />
+          <Route path="companies" element={<CompaniesPage />} />
+          <Route path="companies/:id" element={<CompanyDetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

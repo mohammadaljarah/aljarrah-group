@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
+import { companies } from "@/data/companies";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -7,11 +8,7 @@ export function Footer() {
 
   const content = {
     companiesTitle: t("footer.companies"),
-    companies: [
-      t("footer.companyOne"),
-      t("footer.companyTwo"),
-      t("footer.companyThree"),
-    ],
+    companies,
     linksTitle: t("footer.links"),
     links: [
       { to: "/", label: t("nav.home"), end: true },
@@ -46,7 +43,14 @@ export function Footer() {
           </h2>
           <ul className="mt-4 space-y-3 text-sm text-[#33506d]">
             {content.companies.map((company) => (
-              <li key={company}>{company}</li>
+              <li key={company.id}>
+                <NavLink
+                  to={company.route}
+                  className="transition hover:text-primary-dark"
+                >
+                  {t(company.namePath)}
+                </NavLink>
+              </li>
             ))}
           </ul>
         </div>

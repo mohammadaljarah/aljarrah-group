@@ -52,8 +52,9 @@
     "eyebrow": "Featured Companies",
     "title": "Showcase Of Our Companies",
     "subtitle": "Three of our flagship companies demonstrate how Al-Jarrah Group delivers value across agriculture, logistics, and healthcare support.",
+    "learnMore": "Learn More",
     "rdc": {
-      "name": "Rural Development Company (RDC)",
+      "name": "Rural Development Company",
       "summary": "RDC has supported Iraq's agricultural modernization for decades through high-value equipment, long-term partnerships, and technical support.",
       "pointOne": "Exclusive John Deere dealer for agricultural equipment since 1998, with expansion into Turf and Gator lines in 2016.",
       "pointTwo": "Provides supply, installation, and maintenance for tractors, cultivators, combines, balers, and turf mowers.",
@@ -135,9 +136,9 @@
     "companies": "Companies",
     "links": "Links",
     "contact": "Contact",
-    "companyOne": "Company One",
-    "companyTwo": "Company Two",
-    "companyThree": "Company Three",
+    "companyOne": "Rural Development Company",
+    "companyTwo": "Alghadak Warehouses",
+    "companyThree": "Al-Kafaat Hospital",
     "email": "info@aljarrahgroup.com",
     "phone": "+964 000 000 0000",
     "address": "Baghdad, Iraq"
