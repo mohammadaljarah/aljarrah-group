@@ -4,5 +4,6 @@ export interface CompanyData {
   logo: string;
   namePath: string;
   summaryPath: string;
+  descriptionPath: string;
   pointsPaths: string[];
 }

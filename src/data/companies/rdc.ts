@@ -6,6 +6,7 @@ const rdc: CompanyData = {
   logo: "/rdc_logo.png",
   namePath: "companiesShowcase.rdc.name",
   summaryPath: "companiesShowcase.rdc.summary",
+  descriptionPath: "companiesShowcase.rdc.description",
   pointsPaths: [
     "companiesShowcase.rdc.pointOne",
     "companiesShowcase.rdc.pointTwo",
