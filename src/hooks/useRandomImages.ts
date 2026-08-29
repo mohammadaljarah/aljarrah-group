@@ -83,13 +83,11 @@ async function fetchFromLoremPicsum(count: number): Promise<ImageData[]> {
   const images: ImageData[] = [];
 
   for (let i = 0; i < count; i++) {
-    const randomWidth = 600 + Math.floor(Math.random() * 200);
-    const randomHeight = 400 + Math.floor(Math.random() * 200);
     const randomSeed = Math.floor(Math.random() * 10000);
 
     images.push({
       id: `picsum-${i}-${randomSeed}`,
-      url: `https://picsum.photos/${randomWidth}/${randomHeight}?random=${randomSeed}`,
+      url: `https://picsum.photos/800/500?random=${randomSeed}`,
       title: `Gallery image ${i + 1}`,
       photographer: "Picsum Photos",
     });

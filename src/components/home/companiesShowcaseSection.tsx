@@ -23,7 +23,7 @@ export function CompaniesShowcaseSection() {
         </header>
 
         <div className="space-y-6 sm:space-y-7">
-          {companyData.map((company, idx) => (
+          {companyData.slice(0, 3).map((company, idx) => (
             <article
               key={company.id}
               className="group relative overflow-hidden border border-[#d4e2f2] bg-white transition duration-300 hover:shadow-[0_30px_60px_-30px_rgba(0,71,136,0.4)]"

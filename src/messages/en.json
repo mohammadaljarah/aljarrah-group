@@ -79,6 +79,67 @@
       "pointTwo": "Built around dependable operations, safety, and quality-of-care practices for patients and families.",
       "pointThree": "Detailed facility and service information can be expanded directly from the official hospital website content.",
       "pointFour": "Reflects the group's broader mission to deliver trusted essential services that improve community wellbeing."
+    },
+    "bisculata": {
+      "name": "Bisculata",
+      "summary": "Bisculata is a leading food processing company specializing in biscuit and confectionery manufacturing for the Iraqi market and beyond.",
+      "description": "Bisculata stands as a cornerstone of Iraq's food manufacturing sector, bringing modern production techniques and quality standards to biscuit and confectionery manufacturing. With state-of-the-art facilities and a commitment to food safety, Bisculata delivers products that meet international quality standards while serving the growing Iraqi market. The company combines advanced manufacturing technology with skilled workforce expertise to produce a diverse range of biscuits and confectionery products. Bisculata's operations emphasize rigorous quality control at every stage of production, from raw material selection through final packaging. The company maintains strong relationships with distributors and retailers across Iraq, ensuring reliable supply chains and consistent product availability. Bisculata's commitment to innovation drives continuous improvement in product development and manufacturing efficiency.",
+      "pointOne": "State-of-the-art biscuit and confectionery manufacturing facilities with advanced production technology.",
+      "pointTwo": "Rigorous quality control protocols ensuring products meet international food safety and quality standards.",
+      "pointThree": "Diverse product portfolio serving retail and wholesale markets across Iraq and the region.",
+      "pointFour": "Commitment to sustainable manufacturing practices and community engagement."
+    },
+    "agtiptop": {
+      "name": "AG Tiptop",
+      "summary": "AG Tiptop specializes in agricultural product investment and trading, supporting farmers through quality inputs and market access.",
+      "description": "AG Tiptop (شركة استثمار المنتوجات الزراعية و الحيوانية) represents Al-Jarrah Group's commitment to strengthening Iraq's agricultural and livestock sectors. The company operates as a strategic bridge between modern agricultural inputs and Iraqi farming communities, providing essential products and services that enhance productivity and profitability. AG Tiptop's operations encompass sourcing, quality assurance, and distribution of agricultural inputs including seeds, fertilizers, and veterinary products. The company works closely with agricultural cooperatives, individual farmers, and livestock producers to understand market needs and deliver tailored solutions. AG Tiptop's approach combines international sourcing expertise with deep knowledge of local agricultural practices, enabling the company to provide products and guidance that truly address farmer needs.",
+      "pointOne": "Investment and trading in agricultural and livestock products supporting rural development.",
+      "pointTwo": "Quality inputs including seeds, fertilizers, and veterinary products for farmers and producers.",
+      "pointThree": "Direct partnerships with agricultural cooperatives and farming communities across Iraq.",
+      "pointFour": "Commitment to sustainable agricultural practices and farmer education."
+    },
+    "thermostonenajaf": {
+      "name": "Thermostone Factory - Najaf",
+      "summary": "Thermostone Factory in Najaf produces high-quality refractory and thermal insulation products for industrial applications.",
+      "description": "Thermostone Factory in Najaf represents Al-Jarrah Group's industrial manufacturing capability, producing premium refractory and thermal insulation materials essential for high-temperature industrial processes. The facility combines advanced manufacturing technology with specialized expertise in ceramic and refractory material production. Thermostone's products serve critical applications in refineries, power plants, steel mills, and other heavy industries across Iraq and the region. The company maintains rigorous quality standards and performance testing to ensure products meet demanding industrial specifications. Thermostone's commitment to innovation drives continuous development of advanced materials that enhance efficiency and reliability in customer operations.",
+      "pointOne": "Advanced manufacturing of refractory and thermal insulation materials for industrial applications.",
+      "pointTwo": "Products serve refineries, power plants, steel mills, and heavy industrial facilities.",
+      "pointThree": "Rigorous quality testing and performance validation ensuring product reliability.",
+      "pointFour": "Continuous innovation in material science and manufacturing processes."
+    },
+    "thermostonekarbala": {
+      "name": "Thermostone Factory - Karbala",
+      "summary": "Thermostone Factory in Karbala produces high-quality refractory and thermal insulation products for industrial applications.",
+      "description": "Thermostone Factory in Karbala represents Al-Jarrah Group's expanded industrial manufacturing presence, producing premium refractory and thermal insulation materials for demanding industrial applications. Located strategically in Karbala, this facility enhances the group's capacity to serve industrial customers throughout central and southern Iraq. The factory combines modern production techniques with specialized expertise in ceramic and refractory material manufacturing. Thermostone's products are engineered for critical high-temperature applications where reliability and performance are essential. The company maintains strong quality assurance programs and works closely with customers to ensure products meet precise specifications.",
+      "pointOne": "Advanced manufacturing of refractory and thermal insulation materials for industrial applications.",
+      "pointTwo": "Strategic location in Karbala serving central and southern Iraq industrial sector.",
+      "pointThree": "High-performance materials engineered for critical industrial applications.",
+      "pointFour": "Strong customer partnerships and technical support capabilities."
+    },
+    "alyousuf": {
+      "name": "Al-Yousef Hospital",
+      "summary": "Al-Yousef Hospital extends the group's healthcare commitment through comprehensive medical services and patient-centered care.",
+      "description": "Al-Yousef Hospital represents an extension of Al-Jarrah Group's healthcare initiative, providing comprehensive medical services to communities in Iraq. The hospital operates with a mission to deliver accessible, quality healthcare through modern facilities and professional clinical staff. Al-Yousef Hospital combines diagnostic and therapeutic services with patient-focused care, addressing diverse healthcare needs across the population. The hospital's operational approach emphasizes safety, quality, and efficiency in all clinical and administrative operations. Professional development and ongoing training of medical staff ensure the hospital maintains current best practices in patient care. The hospital works to strengthen community health through preventive care programs and health education initiatives.",
+      "pointOne": "Comprehensive medical services with modern diagnostic and therapeutic capabilities.",
+      "pointTwo": "Professional clinical staff committed to quality patient care and safety standards.",
+      "pointThree": "Community health programs including preventive care and health education.",
+      "pointFour": "Commitment to accessible healthcare delivery serving Iraqi communities."
+    },
+    "alkhazercity": {
+      "name": "Al-Khazer Industrial City",
+      "summary": "Al-Khazer Industrial City is a strategic real estate and industrial development project providing modern facilities for manufacturing and commercial operations.",
+      "description": "Al-Khazer Industrial City (مدينة الخازر الصناعية) represents Al-Jarrah Group's real estate development expertise and commitment to advancing Iraq's industrial infrastructure. The project provides modern, well-planned industrial spaces designed to support manufacturing, logistics, and commercial operations. Al-Khazer Industrial City combines strategic location, modern utilities infrastructure, and professional facility management to create an attractive environment for industrial businesses. The development emphasizes sustainability, safety, and operational efficiency, with facilities designed to support diverse industrial operations. The city serves as a hub for industrial development, attracting businesses and creating employment opportunities across Iraq's industrial sector.",
+      "pointOne": "Modern industrial spaces designed for manufacturing and commercial operations.",
+      "pointTwo": "Strategic location with comprehensive utilities infrastructure and logistical connectivity.",
+      "pointThree": "Professional facility management and operational support services.",
+      "pointFour": "Commitment to sustainable industrial development and community economic growth."
+    },
+    "sectors": {
+      "agricultural": "Agricultural Sector",
+      "foodIndustry": "Food Industry Sector",
+      "manufacturing": "Manufacturing & Industrial Sector",
+      "health": "Healthcare Sector",
+      "uncategorized": "Strategic Development"
     }
   },
   "about": {

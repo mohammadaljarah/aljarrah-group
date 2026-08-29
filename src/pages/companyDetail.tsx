@@ -216,13 +216,18 @@ export function CompanyDetailPage() {
           <p className="mt-4 text-lg leading-8 text-[#355779]">
             Connect with our team to explore partnership opportunities and learn more about our services.
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-8 rounded-lg bg-linear-to-br from-[#f0f7ff] to-[#e8f2ff] p-8 border border-[#d6e3f2]">
+            <p className="text-lg text-[#355779] font-semibold">
+              Send us a message at:
+            </p>
             <a
-              href="/"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-white transition-all duration-200 hover:shadow-lg"
+              href="mailto:info@aljarrahgroup.com"
+              className="mt-3 inline-block text-2xl font-bold text-primary transition-all duration-200 hover:underline"
             >
-              Contact Us
+              info@aljarrahgroup.com
             </a>
+          </div>
+          <div className="mt-8">
             <a
               href="/companies"
               className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary px-8 py-3 font-semibold text-primary transition-all duration-200 hover:bg-primary hover:text-white"

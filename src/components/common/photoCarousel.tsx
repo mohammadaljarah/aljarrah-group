@@ -15,7 +15,9 @@ export function PhotoCarousel({
 }: PhotoCarouselProps) {
   const { images, loading } = useRandomImages(imageCount);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [autoPlay, setAutoPlay] = useState(false);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
   // Auto-play carousel
   useEffect(() => {
@@ -30,7 +32,7 @@ export function PhotoCarousel({
 
   if (loading) {
     return (
-      <div className="flex h-[36rem] w-full items-center justify-center bg-linear-to-r from-[#f0f7ff] to-[#e8f2ff]">
+      <div className="flex h-[20rem] sm:h-[28rem] lg:h-[36rem] w-full items-center justify-center bg-linear-to-r from-[#f0f7ff] to-[#e8f2ff]">
         <div className="text-center">
           <div className="mb-4 inline-block h-12 w-12 animate-spin rounded-full border-4 border-[#ddd] border-t-primary"></div>
           <p className="text-[#355779]">Loading gallery...</p>
@@ -41,7 +43,7 @@ export function PhotoCarousel({
 
   if (images.length === 0) {
     return (
-      <div className="flex h-[36rem] w-full items-center justify-center bg-linear-to-r from-[#f0f7ff] to-[#e8f2ff]">
+      <div className="flex h-[20rem] sm:h-[28rem] lg:h-[36rem] w-full items-center justify-center bg-linear-to-r from-[#f0f7ff] to-[#e8f2ff]">
         <p className="text-[#355779]">Unable to load gallery images</p>
       </div>
     );
@@ -68,13 +70,39 @@ export function PhotoCarousel({
     setTimeout(() => setAutoPlay(true), 10000);
   };
 
+  // Touch handlers for mobile swiping
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchEnd(e.changedTouches[0].clientX);
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      goToNext();
+    } else if (isRightSwipe) {
+      goToPrevious();
+    }
+  };
+
   return (
     <div className="space-y-4">
       {/* Main Carousel */}
       <div
-        className="group relative h-[36rem] w-full overflow-hidden rounded-lg shadow-lg"
+        className="group relative h-[20rem] sm:h-[28rem] lg:h-[36rem] w-full overflow-hidden rounded-lg shadow-lg"
         onMouseEnter={() => setAutoPlay(false)}
         onMouseLeave={() => setAutoPlay(true)}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         {/* Current Image */}
         <div className="relative h-full w-full">
@@ -104,8 +132,9 @@ export function PhotoCarousel({
 
         {/* Previous Button */}
         <button
+          type="button"
           onClick={goToPrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2 text-primary opacity-0 transition-all duration-200 hover:bg-white group-hover:opacity-100"
+          className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2 text-primary opacity-100 sm:opacity-0 sm:transition-all sm:duration-200 sm:hover:bg-white sm:group-hover:opacity-100"
           aria-label="Previous image"
         >
           <ChevronLeft className="h-6 w-6" />
@@ -114,7 +143,7 @@ export function PhotoCarousel({
         {/* Next Button */}
         <button
           onClick={goToNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2 text-primary opacity-0 transition-all duration-200 hover:bg-white group-hover:opacity-100"
+          className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2 text-primary opacity-100 sm:opacity-0 sm:transition-all sm:duration-200 sm:hover:bg-white sm:group-hover:opacity-100"
           aria-label="Next image"
         >
           <ChevronRight className="h-6 w-6" />
