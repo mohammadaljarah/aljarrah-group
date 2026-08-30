@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { sectoredCompanies } from "@/data/companies";
 import { ChevronRight } from "lucide-react";
 
 export function CompaniesPage() {
+  useEffect(() => {
+    document.title = "Al-Jarrah Group | Companies";
+  }, []);
   const { t } = useTranslation();
 
   const content = {

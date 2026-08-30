@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import { getCompanyById } from "@/data/companies";
@@ -8,6 +9,13 @@ export function CompanyDetailPage() {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const company = id ? getCompanyById(id) : undefined;
+
+  useEffect(() => {
+    if (company) {
+      document.title = `Al-Jarrah Group | ${t(company.namePath)}`;
+    }
+  }, [company, t]);
+
   const isRTL = i18n.language === "ar";
 
   const content = {
