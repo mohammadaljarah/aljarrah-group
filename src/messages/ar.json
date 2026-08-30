@@ -196,6 +196,38 @@
     "sectorFiveTitle": "العقارات",
     "sectorFiveDescription": "تطوير الممتلكات وإدارتها بشكل استراتيجي لإنشاء مساحات ذات قيمة للنمو السكني والتجاري."
   },
+  "companies": {
+    "eyebrow": "الشركات",
+    "title": "شركاتنا",
+    "description": "محفظة متنوعة من الشركات المتخصصة موزعة عبر قطاعات الزراعة والصناعة الغذائية والتصنيع والرعاية الصحية والتطوير الاستراتيجي",
+    "viewDetails": "عرض التفاصيل",
+    "ctaTitle": "هل تريد الشراكة معنا؟",
+    "ctaDescription": "سواء كنت تحتاج إلى معدات زراعية أو منتجات غذائية أو مواد صناعية أو خدمات صحية أو عقارات صناعية، مجموعة الجراح جاهزة لخدمتك.",
+    "getInTouch": "تواصل معنا"
+  },
+  "companyDetail": {
+    "backToCompanies": "العودة إلى الشركات",
+    "companyNotFound": "الشركة غير موجودة",
+    "notFoundMessage": "لم تتمكن من العثور على الشركة التي تبحث عنها.",
+    "about": "حول",
+    "gallery": "معرض الصور",
+    "exploreOperations": "استكشف العمليات والمرافق",
+    "keyHighlights": "الميزات الرئيسية",
+    "keyHighlightsDescription": "ما الذي يجعل هذه الشركة جزءا مهما من مجموعة الجراح",
+    "partOfGroup": "جزء من مجموعة الجراح",
+    "operatingStandards": "تعمل بأعلى معايير التميز والالتزام بالخدمة",
+    "specialized": "متخصصة",
+    "specializedDescription": "خبرة رائدة في الصناعة وشراكات طويلة الأمد",
+    "local": "محلية",
+    "localDescription": "فهم عميق للأسواق العراقية والمجتمعات",
+    "quickFacts": "حقائق سريعة",
+    "companyType": "نوع الشركة",
+    "specializedProvider": "موفر خدمات متخصصة",
+    "coverage": "التغطية",
+    "nationwideOperations": "عمليات على مستوى البلد",
+    "partOfGroupLabel": "جزء من المجموعة",
+    "alJarrahGroup": "مجموعة الجراح"
+  },
   "footer": {
     "companies": "الشركات",
     "links": "الروابط",

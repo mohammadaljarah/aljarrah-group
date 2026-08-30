@@ -6,7 +6,13 @@ export function CompaniesPage() {
   const { t } = useTranslation();
 
   const content = {
-    companiesLabel: t("nav.companies"),
+    eyebrow: t("companies.eyebrow"),
+    title: t("companies.title"),
+    description: t("companies.description"),
+    viewDetails: t("companies.viewDetails"),
+    ctaTitle: t("companies.ctaTitle"),
+    ctaDescription: t("companies.ctaDescription"),
+    getInTouch: t("companies.getInTouch"),
   };
 
   return (
@@ -15,13 +21,13 @@ export function CompaniesPage() {
       <section className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-5xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
-            {content.companiesLabel}
+            {content.eyebrow}
           </p>
           <h1 className="mt-4 text-4xl font-bold text-primary sm:text-5xl lg:text-6xl">
-            Our Companies
+            {content.title}
           </h1>
           <p className="mt-6 text-lg leading-8 text-[#355779]">
-            Diverse portfolio of specialized businesses organized across agriculture, food industry, manufacturing, healthcare, and strategic development sectors
+            {content.description}
           </p>
         </div>
       </section>
@@ -98,7 +104,7 @@ export function CompaniesPage() {
                             href={company.route}
                             className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:gap-3"
                           >
-                            View Details
+                            {content.viewDetails}
                             <ChevronRight className="h-4 w-4" />
                           </a>
                         </div>
@@ -116,16 +122,16 @@ export function CompaniesPage() {
       <section className="bg-linear-to-r from-[#0047881f] via-[#0047881a] to-[#0047881a] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-primary md:text-4xl">
-            Ready to Partner With Us?
+            {content.ctaTitle}
           </h2>
           <p className="mt-4 text-lg leading-8 text-[#355779]">
-            Whether you need agricultural equipment, food products, industrial materials, healthcare services, or industrial real estate, Al-Jarrah Group is ready to serve you.
+            {content.ctaDescription}
           </p>
           <a
             href="mailto:info@aljarrahgroup.com"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-white transition-all duration-200 hover:shadow-lg"
           >
-            Get in Touch
+            {content.getInTouch}
           </a>
         </div>
       </section>

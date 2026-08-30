@@ -11,42 +11,43 @@ export function CompanyDetailPage() {
   const isRTL = i18n.language === "ar";
 
   const content = {
-    backToCompanies: "Back to Companies",
-    companyNotFound: "Company Not Found",
-    notFoundMessage: "We couldn't find the company you're looking for.",
-    about: "About",
-    gallery: "Gallery",
-    keyHighlights: "Key Highlights",
-    keyHighlightsDescription: "What makes this company an important part of Al-Jarrah Group",
-    partOfGroup: "Part of Al-Jarrah Group",
-    operatingStandards: "Operating with the highest standards of excellence and commitment to service",
-    specialized: "Specialized",
-    specializedDescription: "Industry-leading expertise and long-term partnerships",
-    local: "Local",
-    localDescription: "Deep understanding of Iraqi markets and communities",
-    quickFacts: "Quick Facts",
-    companyType: "Company Type",
-    specializedProvider: "Specialized Service Provider",
-    coverage: "Coverage",
-    nationwideOperations: "Nationwide Operations",
-    partOfGroupLabel: "Part of Group",
-    alJarrahGroup: "Al-Jarrah Group",
+    backToCompanies: t("companyDetail.backToCompanies"),
+    companyNotFound: t("companyDetail.companyNotFound"),
+    notFoundMessage: t("companyDetail.notFoundMessage"),
+    about: t("companyDetail.about"),
+    gallery: t("companyDetail.gallery"),
+    exploreOperations: t("companyDetail.exploreOperations"),
+    keyHighlights: t("companyDetail.keyHighlights"),
+    keyHighlightsDescription: t("companyDetail.keyHighlightsDescription"),
+    partOfGroup: t("companyDetail.partOfGroup"),
+    operatingStandards: t("companyDetail.operatingStandards"),
+    specialized: t("companyDetail.specialized"),
+    specializedDescription: t("companyDetail.specializedDescription"),
+    local: t("companyDetail.local"),
+    localDescription: t("companyDetail.localDescription"),
+    quickFacts: t("companyDetail.quickFacts"),
+    companyType: t("companyDetail.companyType"),
+    specializedProvider: t("companyDetail.specializedProvider"),
+    coverage: t("companyDetail.coverage"),
+    nationwideOperations: t("companyDetail.nationwideOperations"),
+    partOfGroupLabel: t("companyDetail.partOfGroupLabel"),
+    alJarrahGroup: t("companyDetail.alJarrahGroup"),
   };
 
   if (!company) {
     return (
       <section className="min-h-screen bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-bold text-primary">Company Not Found</h1>
+          <h1 className="text-4xl font-bold text-primary">{content.companyNotFound}</h1>
           <p className="mt-4 text-lg text-[#355779]">
-            We couldn't find the company you're looking for.
+            {content.notFoundMessage}
           </p>
           <a
             href="/companies"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-all duration-200 hover:shadow-lg"
           >
             <ArrowLeft className="h-5 w-5" />
-            Back to Companies
+            {content.backToCompanies}
           </a>
         </div>
       </section>
@@ -153,7 +154,7 @@ export function CompanyDetailPage() {
               {content.gallery}
             </h2>
             <p className="mt-3 text-lg text-[#355779]">
-              {content.keyHighlightsDescription}
+              {content.exploreOperations} {t(company.namePath)}
             </p>
           </div>
           <PhotoCarousel imageCount={20} autoPlayInterval={5000} showThumbnails={true} />

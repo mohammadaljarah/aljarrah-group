@@ -196,6 +196,38 @@
     "sectorFiveTitle": "Real Estate",
     "sectorFiveDescription": "Strategic property development and management creating valuable spaces for residential and commercial growth."
   },
+  "companies": {
+    "eyebrow": "Companies",
+    "title": "Our Companies",
+    "description": "Diverse portfolio of specialized businesses organized across agriculture, food industry, manufacturing, healthcare, and strategic development sectors",
+    "viewDetails": "View Details",
+    "ctaTitle": "Ready to Partner With Us?",
+    "ctaDescription": "Whether you need agricultural equipment, food products, industrial materials, healthcare services, or industrial real estate, Al-Jarrah Group is ready to serve you.",
+    "getInTouch": "Get in Touch"
+  },
+  "companyDetail": {
+    "backToCompanies": "Back to Companies",
+    "companyNotFound": "Company Not Found",
+    "notFoundMessage": "We couldn't find the company you're looking for.",
+    "about": "About",
+    "gallery": "Gallery",
+    "exploreOperations": "Explore operations and facilities",
+    "keyHighlights": "Key Highlights",
+    "keyHighlightsDescription": "What makes this company an important part of Al-Jarrah Group",
+    "partOfGroup": "Part of Al-Jarrah Group",
+    "operatingStandards": "Operating with the highest standards of excellence and commitment to service",
+    "specialized": "Specialized",
+    "specializedDescription": "Industry-leading expertise and long-term partnerships",
+    "local": "Local",
+    "localDescription": "Deep understanding of Iraqi markets and communities",
+    "quickFacts": "Quick Facts",
+    "companyType": "Company Type",
+    "specializedProvider": "Specialized Service Provider",
+    "coverage": "Coverage",
+    "nationwideOperations": "Nationwide Operations",
+    "partOfGroupLabel": "Part of Group",
+    "alJarrahGroup": "Al-Jarrah Group"
+  },
   "footer": {
     "companies": "Companies",
     "links": "Links",

@@ -19,6 +19,8 @@ export function Navbar() {
   };
 
   const handleLanguageChange = (language: "en" | "ar") => {
+    // Save language preference to localStorage
+    localStorage.setItem("i18nLanguage", language);
     void i18n.changeLanguage(language);
     languageMenuRef.current?.removeAttribute("open");
   };
