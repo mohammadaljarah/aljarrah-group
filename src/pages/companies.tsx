@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router";
 import { sectoredCompanies } from "@/data/companies";
 import { ChevronRight } from "lucide-react";
 import idkImage from "@/assets/idk.png";
@@ -109,13 +110,13 @@ export function CompaniesPage() {
 
                         {/* View Details Button */}
                         <div className="mt-8">
-                          <a
-                            href={company.route}
+                          <NavLink
+                            to={company.route}
                             className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:gap-3"
                           >
                             {content.viewDetails}
                             <ChevronRight className="h-4 w-4" data-flip-rtl />
-                          </a>
+                          </NavLink>
                         </div>
                       </div>
                     </div>

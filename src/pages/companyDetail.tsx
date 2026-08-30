@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams } from "react-router";
+import { useParams, NavLink } from "react-router";
 import { useTranslation } from "react-i18next";
 import { getCompanyById } from "@/data/companies";
 import { ArrowLeft, MapPin, Briefcase } from "lucide-react";
@@ -54,13 +54,13 @@ export function CompanyDetailPage() {
           <p className="mt-4 text-lg text-[#355779]">
             {content.notFoundMessage}
           </p>
-          <a
-            href="/companies"
+          <NavLink
+            to="/companies"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-all duration-200 hover:shadow-lg"
           >
             <ArrowLeft className="h-5 w-5" data-flip-rtl />
             {content.backToCompanies}
-          </a>
+          </NavLink>
         </div>
       </section>
     );
@@ -71,13 +71,13 @@ export function CompanyDetailPage() {
       {/* Hero Section */}
       <section className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-6xl">
-          <a
-            href="/companies"
+          <NavLink
+            to="/companies"
             className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:gap-3"
           >
             <ArrowLeft className="h-4 w-4" data-flip-rtl />
             {content.backToCompanies}
-          </a>
+          </NavLink>
 
           <div className={`grid gap-8 md:items-center lg:gap-12 md:grid-cols-[280px_1fr]`}>
             {/* Logo */}
@@ -268,12 +268,12 @@ export function CompanyDetailPage() {
             </a>
           </div>
           <div className="mt-8">
-            <a
-              href="/companies"
+            <NavLink
+              to="/companies"
               className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary px-8 py-3 font-semibold text-primary transition-all duration-200 hover:bg-primary hover:text-white"
             >
               View Other Companies
-            </a>
+            </NavLink>
           </div>
         </div>
       </section>
