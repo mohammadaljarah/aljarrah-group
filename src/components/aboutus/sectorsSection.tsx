@@ -11,6 +11,7 @@ export function SectorsSection() {
   const { t } = useTranslation();
 
   const content = {
+    eyebrow: t("about.sectorsEyebrow"),
     title: t("about.sectorsTitle"),
     subtitle: t("about.sectorsSubtitle"),
   };
@@ -47,7 +48,10 @@ export function SectorsSection() {
     <div className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold text-primary sm:text-4xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
+            {content.eyebrow}
+          </p>
+          <h2 className="mt-3 text-3xl font-bold text-primary sm:text-4xl">
             {content.title}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#33506d]">

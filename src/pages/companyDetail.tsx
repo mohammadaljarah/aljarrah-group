@@ -32,6 +32,9 @@ export function CompanyDetailPage() {
     nationwideOperations: t("companyDetail.nationwideOperations"),
     partOfGroupLabel: t("companyDetail.partOfGroupLabel"),
     alJarrahGroup: t("companyDetail.alJarrahGroup"),
+    interestedInWorking: t("companyDetail.interestedInWorking"),
+    ctaDescription: t("companyDetail.ctaDescription"),
+    ctaEmailText: t("companyDetail.ctaEmailText"),
   };
 
   if (!company) {
@@ -67,7 +70,7 @@ export function CompanyDetailPage() {
             {content.backToCompanies}
           </a>
 
-          <div className={`grid gap-8 md:items-center lg:gap-12 ${isRTL ? "md:grid-cols-[1fr_280px]" : "md:grid-cols-[280px_1fr]"}`}>
+          <div className={`grid gap-8 md:items-center lg:gap-12 md:grid-cols-[280px_1fr]`}>
             {/* Logo */}
             <div className="flex items-center justify-center rounded-lg bg-white p-6 shadow-sm md:h-64">
               <img
@@ -100,7 +103,7 @@ export function CompanyDetailPage() {
             <div className="mt-2 h-1 w-20 bg-primary"></div>
           </div>
 
-          <div className={`grid gap-8 ${isRTL ? "lg:grid-cols-[300px_1fr]" : "lg:grid-cols-[1fr_300px]"}`}>
+          <div className={`grid gap-8 ${isRTL ? "lg:grid-cols-[1fr_300px]" : "lg:grid-cols-[1fr_300px]"}`}>
             {/* Main Description Content */}
             <div className="space-y-6">
               <p className="text-base leading-8 text-[#33506d]">
@@ -235,14 +238,14 @@ export function CompanyDetailPage() {
       <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-primary md:text-4xl">
-            Interested in Working With {t(company.namePath)}?
+            {content.interestedInWorking} {t(company.namePath)}?
           </h2>
           <p className="mt-4 text-lg leading-8 text-[#355779]">
-            Connect with our team to explore partnership opportunities and learn more about our services.
+            {content.ctaDescription}
           </p>
           <div className="mt-8 rounded-lg bg-linear-to-br from-[#f0f7ff] to-[#e8f2ff] p-8 border border-[#d6e3f2]">
             <p className="text-lg text-[#355779] font-semibold">
-              Send us a message at:
+              {content.ctaEmailText}
             </p>
             <a
               href="mailto:info@aljarrahgroup.com"

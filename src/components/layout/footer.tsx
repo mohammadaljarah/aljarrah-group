@@ -1,14 +1,19 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
-import { companies } from "@/data/companies";
+import rdc from "@/data/companies/rdc";
+import alghadak from "@/data/companies/alghadak";
+import alkafaat from "@/data/companies/alkafaat";
 
 export function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
+  const showcaseCompanies = [rdc, alghadak, alkafaat];
+
   const content = {
     companiesTitle: t("footer.companies"),
-    companies,
+    showcaseCompanies,
+    viewAllCompanies: t("footer.viewAllCompanies"),
     linksTitle: t("footer.links"),
     links: [
       { to: "/", label: t("nav.home"), end: true },
@@ -22,8 +27,8 @@ export function Footer() {
   };
 
   const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-2 text-sm transition hover:text-primary-dark ${
-      isActive ? "font-semibold text-primary" : "font-medium text-[#124d86]"
+    `text-sm transition ${
+      isActive ? "font-semibold text-primary opacity-60" : "font-medium text-[#124d86] opacity-100 hover:opacity-80"
     }`;
 
   return (
@@ -42,16 +47,24 @@ export function Footer() {
             {content.companiesTitle}
           </h2>
           <ul className="mt-4 space-y-3 text-sm text-[#33506d]">
-            {content.companies.map((company) => (
+            {content.showcaseCompanies.map((company) => (
               <li key={company.id}>
                 <NavLink
                   to={company.route}
-                  className="transition hover:text-primary-dark"
+                  className="font-medium text-[#124d86] opacity-100 transition hover:opacity-80"
                 >
                   {t(company.namePath)}
                 </NavLink>
               </li>
             ))}
+            <li>
+              <NavLink
+                to="/companies"
+                className="font-medium text-[#124d86] opacity-100 transition hover:opacity-80"
+              >
+                {content.viewAllCompanies}
+              </NavLink>
+            </li>
           </ul>
         </div>
 
@@ -59,18 +72,19 @@ export function Footer() {
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             {content.linksTitle}
           </h2>
-          <div className="mt-4 flex flex-col items-start gap-1 text-sm">
+          <ul className="mt-4 space-y-3 text-sm text-[#33506d]">
             {content.links.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                end={link.end}
-                className={navLinkClassName}
-              >
-                {link.label}
-              </NavLink>
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  end={link.end}
+                  className={navLinkClassName}
+                >
+                  {link.label}
+                </NavLink>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         <div>

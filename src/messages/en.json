@@ -183,6 +183,7 @@
     "pillarTwoDescription": "Our multidisciplinary team connects experience from different sectors to deliver complete, practical solutions.",
     "pillarThreeTitle": "Meaningful Impact",
     "pillarThreeDescription": "We pursue growth that strengthens industries, supports communities, and creates value that endures.",
+    "sectorsEyebrow": "Our Sectors",
     "sectorsTitle": "Our Core Sectors",
     "sectorsSubtitle": "We operate across diverse industries, bringing specialized expertise and integrated solutions to each sector we serve.",
     "sectorOneTitle": "Agricultural",
@@ -226,10 +227,14 @@
     "coverage": "Coverage",
     "nationwideOperations": "Nationwide Operations",
     "partOfGroupLabel": "Part of Group",
-    "alJarrahGroup": "Al-Jarrah Group"
+    "alJarrahGroup": "Al-Jarrah Group",
+    "interestedInWorking": "Interested in Working With",
+    "ctaDescription": "Connect with our team to explore partnership opportunities and learn more about our services.",
+    "ctaEmailText": "Send us a message at:"
   },
   "footer": {
     "companies": "Companies",
+    "viewAllCompanies": "View All Companies",
     "links": "Links",
     "contact": "Contact",
     "companyOne": "Rural Development Company",
