@@ -14,4 +14,5 @@ export default defineConfig({
     port: 8000,
   },
   plugins: [react(), tailwindcss()],
+  base: "/aljarrah-group/"
 });
