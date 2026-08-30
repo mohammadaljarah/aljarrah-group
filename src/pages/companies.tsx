@@ -5,13 +5,17 @@ import { ChevronRight } from "lucide-react";
 export function CompaniesPage() {
   const { t } = useTranslation();
 
+  const content = {
+    companiesLabel: t("nav.companies"),
+  };
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
         <div className="mx-auto max-w-5xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
-            {t("nav.companies")}
+            {content.companiesLabel}
           </p>
           <h1 className="mt-4 text-4xl font-bold text-primary sm:text-5xl lg:text-6xl">
             Our Companies

@@ -4,6 +4,10 @@ import { Card } from "@/components/common/card";
 export function ValuesPillars() {
   const { t } = useTranslation();
 
+  const content = {
+    title: t("about.valuesTitle"),
+  };
+
   const pillars = [
     {
       title: t("about.pillarOneTitle"),
@@ -22,7 +26,7 @@ export function ValuesPillars() {
   return (
     <div className="mb-16">
       <h2 className="mb-8 text-2xl font-bold text-primary sm:text-3xl">
-        {t("about.valuesTitle")}
+        {content.title}
       </h2>
       <div className="grid gap-6 sm:grid-cols-3">
         {pillars.map((pillar, idx) => (

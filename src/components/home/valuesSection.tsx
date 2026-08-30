@@ -4,6 +4,12 @@ import { Card } from "@/components/common/card";
 export function ValuesSection() {
   const { t } = useTranslation();
 
+  const content = {
+    eyebrow: t("values.eyebrow"),
+    title: t("values.title"),
+    subtitle: t("values.subtitle"),
+  };
+
   const values = [
     {
       title: t("values.oneTitle"),
@@ -24,13 +30,13 @@ export function ValuesSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-secondary">
-            {t("values.eyebrow")}
+            {content.eyebrow}
           </p>
           <h2 className="mt-3 text-4xl font-bold text-primary sm:text-5xl">
-            {t("values.title")}
+            {content.title}
           </h2>
           <p className="mt-4 mx-auto max-w-2xl text-lg text-[#33506d]">
-            {t("values.subtitle")}
+            {content.subtitle}
           </p>
         </div>
 

@@ -10,6 +10,12 @@ interface CompanyItem {
 export function CompaniesShowcaseSection() {
   const { t } = useTranslation();
 
+  const content = {
+    eyebrow: t("companiesShowcase.eyebrow"),
+    title: t("companiesShowcase.title"),
+    subtitle: t("companiesShowcase.subtitle"),
+  };
+
   const companies: CompanyItem[] = [
     {
       name: t("companiesShowcase.rdc.name"),
@@ -53,13 +59,13 @@ export function CompaniesShowcaseSection() {
       <div className="relative mx-auto max-w-7xl">
         <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-secondary">
-            {t("companiesShowcase.eyebrow")}
+            {content.eyebrow}
           </p>
           <h2 className="mt-4 text-4xl font-bold leading-tight text-primary sm:text-5xl">
-            {t("companiesShowcase.title")}
+            {content.title}
           </h2>
           <p className="mt-5 text-base leading-7 text-[#355779] sm:text-lg">
-            {t("companiesShowcase.subtitle")}
+            {content.subtitle}
           </p>
         </header>
 

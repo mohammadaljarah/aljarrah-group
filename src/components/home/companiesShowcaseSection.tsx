@@ -6,19 +6,26 @@ import { companies as companyData } from "@/data/companies";
 export function CompaniesShowcaseSection() {
   const { t } = useTranslation();
 
+  const content = {
+    eyebrow: t("companiesShowcase.eyebrow"),
+    title: t("companiesShowcase.title"),
+    subtitle: t("companiesShowcase.subtitle"),
+    learnMore: t("companiesShowcase.learnMore"),
+  };
+
   return (
     <section className="relative overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
 
       <div className="relative mx-auto max-w-7xl">
         <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-secondary">
-            {t("companiesShowcase.eyebrow")}
+            {content.eyebrow}
           </p>
           <h2 className="mt-4 text-4xl font-bold leading-tight text-primary sm:text-5xl">
-            {t("companiesShowcase.title")}
+            {content.title}
           </h2>
           <p className="mt-5 text-base leading-7 text-[#355779] sm:text-lg">
-            {t("companiesShowcase.subtitle")}
+            {content.subtitle}
           </p>
         </header>
 
@@ -81,7 +88,7 @@ export function CompaniesShowcaseSection() {
                     to={company.route}
                     className="inline-flex items-center gap-2 border border-primary bg-white px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary hover:text-white"
                   >
-                    {t("companiesShowcase.learnMore")}
+                    {content.learnMore}
                     <span aria-hidden="true">→</span>
                   </NavLink>
                 </div>

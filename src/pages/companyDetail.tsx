@@ -10,6 +10,29 @@ export function CompanyDetailPage() {
   const company = id ? getCompanyById(id) : undefined;
   const isRTL = i18n.language === "ar";
 
+  const content = {
+    backToCompanies: "Back to Companies",
+    companyNotFound: "Company Not Found",
+    notFoundMessage: "We couldn't find the company you're looking for.",
+    about: "About",
+    gallery: "Gallery",
+    keyHighlights: "Key Highlights",
+    keyHighlightsDescription: "What makes this company an important part of Al-Jarrah Group",
+    partOfGroup: "Part of Al-Jarrah Group",
+    operatingStandards: "Operating with the highest standards of excellence and commitment to service",
+    specialized: "Specialized",
+    specializedDescription: "Industry-leading expertise and long-term partnerships",
+    local: "Local",
+    localDescription: "Deep understanding of Iraqi markets and communities",
+    quickFacts: "Quick Facts",
+    companyType: "Company Type",
+    specializedProvider: "Specialized Service Provider",
+    coverage: "Coverage",
+    nationwideOperations: "Nationwide Operations",
+    partOfGroupLabel: "Part of Group",
+    alJarrahGroup: "Al-Jarrah Group",
+  };
+
   if (!company) {
     return (
       <section className="min-h-screen bg-[linear-gradient(180deg,#f7fbff_0%,#edf4fb_55%,#e7eef7_100%)] px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
@@ -40,7 +63,7 @@ export function CompanyDetailPage() {
             className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:gap-3"
           >
             <ArrowLeft className="h-4 w-4" />
-            Back to Companies
+            {content.backToCompanies}
           </a>
 
           <div className={`grid gap-8 md:items-center lg:gap-12 ${isRTL ? "md:grid-cols-[1fr_280px]" : "md:grid-cols-[280px_1fr]"}`}>
@@ -71,7 +94,7 @@ export function CompanyDetailPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12">
             <h2 className="text-4xl font-bold text-primary md:text-5xl">
-              About {t(company.namePath)}
+              {content.about} {t(company.namePath)}
             </h2>
             <div className="mt-2 h-1 w-20 bg-primary"></div>
           </div>
@@ -88,31 +111,31 @@ export function CompanyDetailPage() {
             <div className="space-y-4 lg:sticky lg:top-8 lg:h-fit">
               <div className="rounded-lg border-2 border-primary bg-linear-to-br from-primary/5 to-primary/10 p-6">
                 <h3 className="text-sm font-bold uppercase tracking-wider text-primary">
-                  Quick Facts
+                  {content.quickFacts}
                 </h3>
                 <div className="mt-6 space-y-4 border-t border-primary/20 pt-6">
                   <div>
                     <p className="text-xs font-semibold uppercase text-primary/70">
-                      Company Type
+                      {content.companyType}
                     </p>
                     <p className="mt-1 text-sm font-semibold text-primary">
-                      Specialized Service Provider
+                      {content.specializedProvider}
                     </p>
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase text-primary/70">
-                      Coverage
+                      {content.coverage}
                     </p>
                     <p className="mt-1 text-sm font-semibold text-primary">
-                      Nationwide Operations
+                      {content.nationwideOperations}
                     </p>
                   </div>
                   <div>
                     <p className="text-xs font-semibold uppercase text-primary/70">
-                      Part of Group
+                      {content.partOfGroupLabel}
                     </p>
                     <p className="mt-1 text-sm font-semibold text-primary">
-                      Al-Jarrah Group
+                      {content.alJarrahGroup}
                     </p>
                   </div>
                 </div>
@@ -127,10 +150,10 @@ export function CompanyDetailPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold text-primary md:text-4xl">
-              Gallery
+              {content.gallery}
             </h2>
             <p className="mt-3 text-lg text-[#355779]">
-              Explore {t(company.namePath)} operations and facilities
+              {content.keyHighlightsDescription}
             </p>
           </div>
           <PhotoCarousel imageCount={20} autoPlayInterval={5000} showThumbnails={true} />
@@ -142,10 +165,10 @@ export function CompanyDetailPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-primary md:text-4xl">
-              Key Highlights
+              {content.keyHighlights}
             </h2>
             <p className="mt-4 text-lg text-[#355779]">
-              What makes this company an important part of Al-Jarrah Group
+              {content.keyHighlightsDescription}
             </p>
           </div>
 
@@ -175,25 +198,25 @@ export function CompanyDetailPage() {
       <section className="bg-[linear-gradient(135deg,#0047881f_0%,#0047881a_100%)] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center text-3xl font-bold text-primary md:text-4xl">
-            Part of Al-Jarrah Group
+            {content.partOfGroup}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-[#355779]">
-            Operating with the highest standards of excellence and commitment to service
+            {content.operatingStandards}
           </p>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3">
             <div className="rounded-lg bg-white p-8 text-center shadow-sm">
               <Briefcase className="mx-auto h-10 w-10 text-primary" />
-              <h3 className="mt-4 text-xl font-bold text-primary">Specialized</h3>
+              <h3 className="mt-4 text-xl font-bold text-primary">{content.specialized}</h3>
               <p className="mt-2 text-sm text-[#355779]">
-                Industry-leading expertise and long-term partnerships
+                {content.specializedDescription}
               </p>
             </div>
             <div className="rounded-lg bg-white p-8 text-center shadow-sm">
               <MapPin className="mx-auto h-10 w-10 text-primary" />
-              <h3 className="mt-4 text-xl font-bold text-primary">Local</h3>
+              <h3 className="mt-4 text-xl font-bold text-primary">{content.local}</h3>
               <p className="mt-2 text-sm text-[#355779]">
-                Deep understanding of Iraqi markets and communities
+                {content.localDescription}
               </p>
             </div>
             <div className="rounded-lg bg-white p-8 text-center shadow-sm">

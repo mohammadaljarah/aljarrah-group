@@ -10,6 +10,11 @@ import {
 export function SectorsSection() {
   const { t } = useTranslation();
 
+  const content = {
+    title: t("about.sectorsTitle"),
+    subtitle: t("about.sectorsSubtitle"),
+  };
+
   const sectors = [
     {
       title: t("about.sectorOneTitle"),
@@ -43,10 +48,10 @@ export function SectorsSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold text-primary sm:text-4xl">
-            {t("about.sectorsTitle")}
+            {content.title}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#33506d]">
-            {t("about.sectorsSubtitle")}
+            {content.subtitle}
           </p>
         </div>
 
