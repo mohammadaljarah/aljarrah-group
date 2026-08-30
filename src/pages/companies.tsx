@@ -105,7 +105,7 @@ export function CompaniesPage() {
                             className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:gap-3"
                           >
                             {content.viewDetails}
-                            <ChevronRight className="h-4 w-4" />
+                            <ChevronRight className="h-4 w-4" data-flip-rtl />
                           </a>
                         </div>
                       </div>

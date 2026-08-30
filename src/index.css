@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -15,10 +15,20 @@
 		text-rendering: optimizeLegibility;
 	}
 
+	/* Arabic font override */
+	html[lang="ar"] {
+		font-family: "Noto Sans Arabic", Arial, sans-serif;
+	}
+
 	body {
 		font-family: "Open Sans", Arial, sans-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+	}
+
+	/* Arabic font override for body */
+	html[lang="ar"] body {
+		font-family: "Noto Sans Arabic", Arial, sans-serif;
 	}
 
 	h1,
@@ -28,5 +38,22 @@
 	h5,
 	h6 {
 		font-family: "Outfit", "Open Sans", Arial, sans-serif;
+	}
+
+	/* Arabic font for headings */
+	html[lang="ar"] h1,
+	html[lang="ar"] h2,
+	html[lang="ar"] h3,
+	html[lang="ar"] h4,
+	html[lang="ar"] h5,
+	html[lang="ar"] h6 {
+		font-family: "Noto Sans Arabic", Arial, sans-serif;
+	}
+}
+
+@layer components {
+	/* Flip directional icons in Arabic - target icons with data-flip-rtl attribute */
+	html[lang="ar"] [data-flip-rtl] {
+		transform: scaleX(-1);
 	}
 }

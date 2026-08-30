@@ -46,7 +46,7 @@ export function CompanyDetailPage() {
             href="/companies"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-semibold text-white transition-all duration-200 hover:shadow-lg"
           >
-            <ArrowLeft className="h-5 w-5" />
+            <ArrowLeft className="h-5 w-5" data-flip-rtl />
             {content.backToCompanies}
           </a>
         </div>
@@ -63,7 +63,7 @@ export function CompanyDetailPage() {
             href="/companies"
             className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:gap-3"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="h-4 w-4" data-flip-rtl />
             {content.backToCompanies}
           </a>
 
