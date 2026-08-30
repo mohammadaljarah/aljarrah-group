@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
+import logoEmblem from "@/assets/logo_emblem.png";
+import logoWide from "@/assets/logo_wide.png";
 
 export function Navbar() {
   const { t, i18n } = useTranslation();
@@ -36,12 +38,12 @@ export function Navbar() {
         <nav className="flex items-center gap-2 md:gap-4">
           <NavLink to="/" className="order-1 shrink-0 md:mr-6">
             <img
-              src="/logo_emblem.png"
+              src={logoEmblem}
               alt="Al Jarrah Group"
               className="h-9 w-9 sm:hidden"
             />
             <img
-              src="/logo_wide.png"
+              src={logoWide}
               alt="Al Jarrah Group"
               className="hidden h-12 w-auto sm:block sm:h-14"
             />

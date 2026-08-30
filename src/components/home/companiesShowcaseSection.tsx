@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
 import { Diamond } from "lucide-react";
 import { companies as companyData } from "@/data/companies";
+import idkImage from "@/assets/idk.png";
 
 export function CompaniesShowcaseSection() {
   const { t } = useTranslation();
@@ -46,7 +47,7 @@ export function CompaniesShowcaseSection() {
                     src={company.logo}
                     onError={(e) => {
                       const img = e.target as HTMLImageElement;
-                      img.src = "/idk.png";
+                      img.src = idkImage;
                     }}
                     alt={`${t(company.namePath)} logo`}
                     className="h-full w-full object-contain object-center"

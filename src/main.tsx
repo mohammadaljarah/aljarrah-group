@@ -11,7 +11,7 @@ import { CompanyDetailPage } from "@/pages/companyDetail";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/aljarrah-group/">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />

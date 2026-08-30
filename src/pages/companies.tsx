@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { sectoredCompanies } from "@/data/companies";
 import { ChevronRight } from "lucide-react";
+import idkImage from "@/assets/idk.png";
 
 export function CompaniesPage() {
   useEffect(() => {
@@ -64,7 +65,7 @@ export function CompaniesPage() {
                             src={company.logo}
                             onError={(e) => {
                               const img = e.target as HTMLImageElement;
-                              img.src = "/idk.png";
+                              img.src = idkImage;
                             }}
                             alt={`${t(company.namePath)} logo`}
                             className="h-full w-full object-contain object-center"

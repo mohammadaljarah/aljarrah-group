@@ -1,9 +1,10 @@
 import type { CompanyData } from "@/types";
+import idkImage from "@/assets/idk.png";
 
 const alKhazerCity: CompanyData = {
-  id: "alkhazercity",
-  route: "/companies/alkhazercity",
-  logo: "/alkhazercity_logo.png",
+  id: "al-khazer-city",
+  route: "/companies/al-khazer-city",
+  logo: idkImage,
   namePath: "companiesShowcase.alkhazercity.name",
   summaryPath: "companiesShowcase.alkhazercity.summary",
   descriptionPath: "companiesShowcase.alkhazercity.description",

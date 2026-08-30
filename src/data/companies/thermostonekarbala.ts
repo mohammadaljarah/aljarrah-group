@@ -1,9 +1,10 @@
 import type { CompanyData } from "@/types";
+import idkImage from "@/assets/idk.png";
 
-const thermostoneKarbala: CompanyData = {
-  id: "thermostonekarbala",
-  route: "/companies/thermostonekarbala",
-  logo: "/thermostone_logo.png",
+const ThermoStoneKarbala: CompanyData = {
+  id: "thermostone-karbala",
+  route: "/companies/thermostone-karbala",
+  logo: idkImage,
   namePath: "companiesShowcase.thermostonekarbala.name",
   summaryPath: "companiesShowcase.thermostonekarbala.summary",
   descriptionPath: "companiesShowcase.thermostonekarbala.description",
@@ -15,4 +16,4 @@ const thermostoneKarbala: CompanyData = {
   ],
 };
 
-export default thermostoneKarbala;
+export default ThermoStoneKarbala;

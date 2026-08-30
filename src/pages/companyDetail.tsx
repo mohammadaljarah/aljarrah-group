@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { getCompanyById } from "@/data/companies";
 import { ArrowLeft, MapPin, Briefcase } from "lucide-react";
 import { PhotoCarousel } from "@/components/common/photoCarousel";
+import idkImage from "@/assets/idk.png";
 
 export function CompanyDetailPage() {
   const { id } = useParams();
@@ -85,7 +86,7 @@ export function CompanyDetailPage() {
                 src={company.logo}
                 onError={(e) => {
                   const img = e.target as HTMLImageElement;
-                  img.src = "/idk.png";
+                  img.src = idkImage;
                 }}
                 alt={`${t(company.namePath)} logo`}
                 className="max-h-full max-w-full object-contain"

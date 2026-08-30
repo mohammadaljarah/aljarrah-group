@@ -1,9 +1,10 @@
 import type { CompanyData } from "@/types";
+import idkImage from "@/assets/idk.png";
 
-const bisculata: CompanyData = {
+const Bisculata: CompanyData = {
   id: "bisculata",
   route: "/companies/bisculata",
-  logo: "/bisculata_logo.png",
+  logo: idkImage,
   namePath: "companiesShowcase.bisculata.name",
   summaryPath: "companiesShowcase.bisculata.summary",
   descriptionPath: "companiesShowcase.bisculata.description",
@@ -15,4 +16,4 @@ const bisculata: CompanyData = {
   ],
 };
 
-export default bisculata;
+export default Bisculata;

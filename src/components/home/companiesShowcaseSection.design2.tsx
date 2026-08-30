@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import idkImage from "@/assets/idk.png";
 
 interface CompanyItem {
   name: string;
@@ -86,7 +87,7 @@ export function CompaniesShowcaseSection() {
                       src={company.logo}
                       onError={(e) => {
                         const img = e.target as HTMLImageElement;
-                        img.src = "/idk.png";
+                        img.src = idkImage;
                       }}
                       alt={`${company.name} logo`}
                       className="h-full w-full object-contain object-center"

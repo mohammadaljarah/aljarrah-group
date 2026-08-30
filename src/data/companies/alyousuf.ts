@@ -1,9 +1,10 @@
 import type { CompanyData } from "@/types";
+import idkImage from "@/assets/idk.png";
 
 const alYousuf: CompanyData = {
-  id: "alyousuf",
-  route: "/companies/alyousuf",
-  logo: "/alyousuf_logo.png",
+  id: "al-yousuf",
+  route: "/companies/al-yousuf",
+  logo: idkImage,
   namePath: "companiesShowcase.alyousuf.name",
   summaryPath: "companiesShowcase.alyousuf.summary",
   descriptionPath: "companiesShowcase.alyousuf.description",

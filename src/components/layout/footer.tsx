@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
+import logoEmblem from "@/assets/logo_emblem.png";
 import rdc from "@/data/companies/rdc";
 import alghadak from "@/data/companies/alghadak";
 import alkafaat from "@/data/companies/alkafaat";
@@ -36,7 +37,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr_1.1fr] lg:px-8">
         <div className="space-y-4">
           <img
-            src="/logo_emblem.png"
+            src={logoEmblem}
             alt="Al Jarrah Group emblem"
             className="h-20 w-auto"
           />
