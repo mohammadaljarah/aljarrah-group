@@ -58,6 +58,10 @@ export function CompaniesPage() {
                         <div className="h-32 w-full md:h-40">
                           <img
                             src={company.logo}
+                            onError={(e) => {
+                              const img = e.target as HTMLImageElement;
+                              img.src = "/idk.png";
+                            }}
                             alt={`${t(company.namePath)} logo`}
                             className="h-full w-full object-contain object-center"
                           />
@@ -75,7 +79,7 @@ export function CompaniesPage() {
                           </p>
 
                           {/* Full Description */}
-                          <p className="mt-4 text-sm leading-6 text-[#33506d]">
+                          <p className="mt-4 line-clamp-3 text-sm leading-6 text-[#33506d]">
                             {t(company.descriptionPath)}
                           </p>
 

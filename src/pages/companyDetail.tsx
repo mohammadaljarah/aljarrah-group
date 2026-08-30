@@ -75,6 +75,10 @@ export function CompanyDetailPage() {
             <div className="flex items-center justify-center rounded-lg bg-white p-6 shadow-sm md:h-64">
               <img
                 src={company.logo}
+                onError={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  img.src = "/idk.png";
+                }}
                 alt={`${t(company.namePath)} logo`}
                 className="max-h-full max-w-full object-contain"
               />

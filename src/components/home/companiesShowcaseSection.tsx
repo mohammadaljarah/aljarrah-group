@@ -44,6 +44,10 @@ export function CompaniesShowcaseSection() {
                 <div className="h-24 px-2 py-1 sm:h-28 sm:px-3">
                   <img
                     src={company.logo}
+                    onError={(e) => {
+                      const img = e.target as HTMLImageElement;
+                      img.src = "/idk.png";
+                    }}
                     alt={`${t(company.namePath)} logo`}
                     className="h-full w-full object-contain object-center"
                     loading="lazy"
