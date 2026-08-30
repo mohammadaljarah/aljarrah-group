@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router";
+import heroBg from "@/assets/hero_background.png";
 
 export function Hero() {
   const { i18n, t } = useTranslation();
@@ -30,7 +31,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/hero_background.png')",
+          backgroundImage: `url(${heroBg})`,
           transform: isRtl ? "scaleX(-1)" : undefined,
         }}
       />
